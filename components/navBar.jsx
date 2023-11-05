@@ -39,7 +39,9 @@ export default function () {
                             <a className="nav-link" href="#"><i className="bi bi-shop" />Locales Comerciales</a>
                         </li>
                     </ul>
-                    <button className="btn btn-warning" type="submit"> <i className="bi arrow-right-circle-fill"></i> Iniciar Sesion</button>
+                    <Link href={'/login'}>
+                        <button className="btn btn-warning" type="submit"> <i className="bi arrow-right-circle-fill"></i> Iniciar Sesion</button>
+                    </Link>
                 </div>
             </div>
         </nav>
