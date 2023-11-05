@@ -1,6 +1,6 @@
 export default function Article(){
     return (
-        <div className='col-4 mb-4'>
+        <div className='col-12 col-sm-6 col-lg-4 mb-4'>
             <div className="bgArticle">
                 <div className='articleImage'> 
                 </div>

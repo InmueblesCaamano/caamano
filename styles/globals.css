@@ -19,7 +19,6 @@ body{
   background-size: cover;
 }
 .navegador{
-  background-color: rgba(0, 0, 0, 0.034);
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;  
@@ -79,7 +78,7 @@ body{
   position: fixed !important;
   width: 100%;
   background-color: transparent;
-  top: 10px;
+  top:0px;
 }
 
 .menuNav{
@@ -125,17 +124,6 @@ body{
   color: white;
   font-size: 60px;
   font-weight: 300;
-}
-.buscador{
-  background-color: var(--transparentWhite);
-  padding: 20px 40px;
-  height: 50px;
-  border-radius: 25px;
-  border: var(--transparentWhite);
-  color: #000000;
-  font-size: 30px;
-  box-shadow: 7px 7px 7px rgba(43, 43, 43, 0.856);
-  width: 80%;
 }
 .articleImage{
   background-color: rgba(66, 64, 64, 0.336);
@@ -188,4 +176,15 @@ p{
   100% {
     transform: translateY(0);
   }
+}
+
+.wrapFinder{
+  border-radius: 5px !important;
+}
+.form-select{
+  font-size: 20px !important;
+}
+.btn-buscar-wrap{
+  display: flex;
+  justify-content: center;
 }

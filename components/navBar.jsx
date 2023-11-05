@@ -1,13 +1,16 @@
 import Image from "next/image"
 import NavbarCollapse from "./navbarCollapse"
 import useStore from "@/zustand/zustand"
-
+import navScroll from "@/hooks/navScroll"
+import Link from "next/link"
 export default function () {
+
     const { isCollapsed, collapse } = useStore()
+    const { scroll } = navScroll()
 
     return (<div >
         {isCollapsed && <NavbarCollapse />}
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark2">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark2" style={{ backgroundColor: scroll ? '#001133dd' : 'transparent' }}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#"><Image src='/img/logo.svg' alt="Picture of the author" height={50} width={50}></Image></a>
                 <button onClick={collapse} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,9 +19,10 @@ export default function () {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#">
+
+                            <Link href='/filter' className="nav-link" aria-current="page">
                                 <i className="bi bi-house" />   Casas
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">
@@ -39,6 +43,5 @@ export default function () {
                 </div>
             </div>
         </nav>
-
     </div>)
 }
