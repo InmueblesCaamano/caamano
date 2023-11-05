@@ -9,7 +9,7 @@ export default function () {
     const { scroll } = navScroll()
 
     return (<div >
-        {isCollapsed && <NavbarCollapse />}
+        {!isCollapsed && <NavbarCollapse />}
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark2" style={{ backgroundColor: scroll ? '#001133dd' : 'transparent' }}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#"><Image src='/img/logo.svg' alt="Picture of the author" height={50} width={50}></Image></a>
