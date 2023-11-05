@@ -10,7 +10,7 @@ export default function () {
 
     return (<div >
         {!isCollapsed && <NavbarCollapse />}
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark2" style={{ backgroundColor: scroll ? '#001133dd' : 'transparent' }}>
+        <nav className={`navbar navbar-expand-lg navbar-dark ${scroll && 'bg-dark'}`} >
             <div className="container-fluid">
                 <a className="navbar-brand" href="#"><Image src='/img/logo.svg' alt="Picture of the author" height={50} width={50}></Image></a>
                 <button onClick={collapse} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

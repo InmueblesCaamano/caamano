@@ -8,6 +8,15 @@ export default function Carousel() {
             <h1 className='mb-3 text-white'> <i className='bi bi-pin' />Ecuentra la propiedad de tus sueños</h1>
             <div className="container bg-light p-4 wrapFinder">
                 <div className="row">
+                    <div className="col-12 col-lg-2">
+                        <div className="text-start">
+                            Venta o alquiler
+                        </div>
+                        <select className="form-select" name="" id="">
+                            <option value=""> En Venta </option>
+                            <option value=""> En Alquiler </option>
+                        </select>
+                    </div>
                     <div className="col-12 col-lg-4">
                         <div className="text-start">
                             Ubicacion (Nueva Esparta)
@@ -28,15 +37,6 @@ export default function Carousel() {
                         <option value=""> TomHouse </option>
                         <option value=""> Terrenos </option>
                         <option value=""> Locales Comerciales </option>
-                        </select>
-                    </div>
-                    <div className="col-12 col-lg-2">
-                        <div className="text-start">
-                            Venta o alquiler
-                        </div>
-                        <select className="form-select" name="" id="">
-                            <option value=""> En Venta </option>
-                            <option value=""> En Alquiler </option>
                         </select>
                     </div>
                     <div className="col-12 col-lg-2 btn-buscar-wrap">

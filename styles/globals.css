@@ -188,3 +188,13 @@ p{
   display: flex;
   justify-content: center;
 }
+.numberContact{
+  font-size: 60px;
+  font-weight: 300;
+  text-decoration: none;
+  color: rgb(140, 147, 170);
+  transition-duration: 0.4s;
+}
+.numberContact:hover{
+  color: green;
+}
