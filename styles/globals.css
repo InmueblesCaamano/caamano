@@ -4,6 +4,7 @@ body{
   margin: 0px;
   padding: 0px;
 }
+
 :root{
   --yellow:rgb(233, 201, 60);
   --transparentWhite:rgb(255, 255, 255);
@@ -23,6 +24,23 @@ body{
   justify-content: space-between;
   padding: 20px 50px;  
   align-items: center;
+}
+.imgWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-Logo{
+  width: 200px;
+}
+.circle{
+  background-color: rgba(255, 255, 255, 0.829);
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 .collapseLI{
   padding: 5px;
@@ -195,9 +213,11 @@ p{
   color: rgb(140, 147, 170);
   transition-duration: 0.4s;
 }
+
 .numberContact:hover{
   color: green;
 }
+
 .radius-5{
   border-radius: 10px;
   background-color: #0000002c !important;
