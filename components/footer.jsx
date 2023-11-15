@@ -23,8 +23,8 @@ export default function Footer() {
                             <h4>Nosotros</h4>
                         </div>
                         <div className="col-12 col-md-6 text-start">
-                            <a  className="numberContact" href="tel:04141223345">
-                                <i> <i className="bi bi-telephone" /> 04141220527</i>
+                            <a  className="numberContact" href="tel:+584248261631">
+                                <i> <i className="bi bi-telephone" /> +58 424-8261631</i>
                             </a>
                         </div>
                     </div>
